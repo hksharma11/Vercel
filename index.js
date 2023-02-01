@@ -8,7 +8,7 @@ const port = 9000;
 
 app.use("/data/", (req, res) => {
     run(req.query.Key,req.query.Media,req.query.Caption);
-    res.send("Ok")
+    res.send("Ok Vercel")
 })
 
 const run = async (key,media,caption) => {
